@@ -1,40 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>범어사 대자대비 오디오 가이드</title>
+  <meta charset="UTF-8">
+  <title>범어사 대자대비 오디오 가이드</title>
   <style>
-  body {
-    font-family: sans-serif;
-    font-size: 22px; /* ✅ 폰트 더 크게 */
-    margin: 20px;
-  }
+    body {
+      font-family: sans-serif;
+      font-size: 22px;
+      margin: 20px;
+    }
 
-  .card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
 
-  .card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-  }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
 
-  .card audio {
-    width: 160px; /* ✅ 오디오 플레이어 너비 줄이기 */
-    height: 30px; /* ✅ 오디오 플레이어 높이 줄이기 */
-    margin-top: 10px;
-  }
+    .card audio {
+      width: 160px;
+      height: 30px;
+      margin-top: 10px;
+    }
 
-  .card h2 {
-    margin-top: 0;
-  }
-</style>
+    /* 오디오 플레이어 스타일 다듬기 (웹킷 기반 브라우저용) */
+    .card audio::-webkit-media-controls-panel {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    /* 반응형 대응 */
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 18px;
+      }
+
+      .card audio {
+        width: 120px;
+        height: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
     <h1>대자대비 오디오 가이드</h1>
